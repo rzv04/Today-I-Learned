@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today I Learned!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header-container container">
+      <header class="header">
+        <div class="logo-text-container">
+          <img
+            src="icons/speech-bubble.png"
+            alt="Image of the logo"
+            class="logo-img"
+            width="512"
+            height="512"
+          />
+          <h1 class="header-text">Today I Learned</h1>
+        </div>
+        <button class="btn btn-gradient btn-main">Share A Fact</button>
+      </header>
+    </div>
+    <div class="container">
+      <form action="#" class="fact-form">
+        <input
+          type="text"
+          name="fact"
+          id="fact"
+          placeholder="Share a fact with the world..."
+        />
+        <span>200</span>
+
+        <input
+          type="text"
+          name="source"
+          id="source"
+          placeholder="Trustworthy source"
+        />
+
+        <select name="category" id="category">
+          <option value="">Choose category</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+          <option value="society">Society</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="health">Health</option>
+          <option value="history">History</option>
+          <option value="news">News</option>
+        </select>
+
+        <button class="btn btn-gradient">Post</button>
+      </form>
+    </div>
+    <div class="container">
+      <main class="main">
+        <aside class="category-filters">
+          <ul>
+            <li><btn class="btn btn-gradient">All</btn></li>
+            <li>
+              <btn
+                class="btn btn-category"
+                style="background-color: rgb(59, 130, 246)"
+                >Technology</btn
+              >
+            </li>
+            <li>
+              <btn class="btn" style="background-color: rgb(22, 163, 74)"
+                >Science</btn
+              >
+            </li>
+            <li>
+              <btn class="btn" style="background-color: rgb(239, 68, 68)"
+                >Finance</btn
+              >
+            </li>
+            <li>
+              <btn class="btn" style="background-color: rgb(234, 179, 8)"
+                >Society</btn
+              >
+            </li>
+            <li>
+              <btn class="btn" style="background-color: rgb(219, 39, 119)"
+                >Entertainment</btn
+              >
+            </li>
+            <li>
+              <btn class="btn" style="background-color: rgb(20, 184, 166)"
+                >Health</btn
+              >
+            </li>
+            <li>
+              <btn class="btn" style="background-color: rgb(249, 115, 22)"
+                >History</btn
+              >
+            </li>
+            <li>
+              <btn class="btn" style="background-color: rgb(139, 92, 246)"
+                >News</btn
+              >
+            </li>
+          </ul>
+        </aside>
+        <section class="main-section">
+          <ul class="facts-list">
+            <li class="fact">
+              <p>
+                There is enough DNA in the average person's body to stretch from
+                the sun to Pluto and back — 17 times
+                <a href="#">&lpar;Source&rpar;</a>
+              </p>
+
+              <span class="tag" style="background-color: rgb(22, 163, 74)"
+                >Science</span
+              >
+              <div class="vote-buttons">
+                <button>👍 6</button>
+                <button>🤯 13</button>
+                <button>⛔️ 2</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                React is being developed by Meta (formerly facebook)
+                <a href="#">&lpar;Source&rpar;</a>
+              </p>
+
+              <span class="tag" style="background-color: rgb(59, 130, 246)"
+                >Technology</span
+              >
+              <div class="vote-buttons">
+                <button>👍 6</button>
+                <button>🤯 13</button>
+                <button>⛔️ 2</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <a
+        href="https://www.flaticon.com/free-icons/message"
+        title="message icons"
+        >Message icons created by Freepik - Flaticon</a
+      >
+    </footer>
+  </body>
+</html>
