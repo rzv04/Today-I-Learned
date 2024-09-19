@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline-color: #a8a29e;
+}
 body {
   font-family: "Sono", sans-serif;
   background-color: #292524;
@@ -16,6 +19,13 @@ body {
 
   /* margin: auto; */
 }
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.8px;
+  font-weight: 800;
+  font-family: "Coiny", sans-serif;
+}
+
 .header {
   color: #fff;
   display: flex;
@@ -30,13 +40,32 @@ body {
   justify-content: space-around;
 }
 .logo-img {
-  width: 4rem;
-  height: 4rem;
-  margin-right: 3.2rem;
+  width: 3rem;
+  height: 3rem;
+
   /* background-color: #fff; */
-  border-radius: 50%;
-  padding: 0.5rem;
+  /* border-radius: 50%; */
+  /* padding: 0.8rem; */
+  /* background-image: linear-gradient(135deg, #e64980, #7950f2); */
+}
+/* 
+.logo-img::after {
+  workaround for glitchy background image with padding
+  content: "";
+  display: block;
+  background-color: #3b82f6;
+  padding: 5rem;
+  DOESN't work for images
+} */
+
+.logo-img-container {
   background-image: linear-gradient(135deg, #e64980, #7950f2);
+  border-radius: 50%;
+  padding: 0.8rem;
+  margin-right: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-text {
@@ -47,7 +76,7 @@ body {
   /* generic button */
   border-radius: 1000px;
   border: none;
-  padding: 1rem;
+  padding: 0.8rem 3rem;
   text-transform: uppercase;
   color: #fff;
   background-color: #000;
@@ -55,6 +84,13 @@ body {
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  font-size: 1.1rem;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: rotate(-3deg) scale(1.1);
 }
 
 .btn-gradient {
@@ -113,7 +149,7 @@ ul {
 
 .tag {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.4rem;
   border-radius: 100px;
   text-transform: uppercase;
   font-family: "Coiny", sans-serif;
@@ -122,9 +158,9 @@ ul {
 .fact-form {
   display: flex;
   background-color: #44403c;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
-  gap: 3rem;
+  gap: 1.7rem;
   align-items: center;
 }
 /* .fact-form > * {
@@ -141,12 +177,22 @@ ul {
   padding: 1rem;
   border-radius: 100px;
   background-color: #78716c;
+  font-family: "Sono", sans-serif;
 }
 
 .fact-form input::placeholder {
   color: #a19c98;
+  /* font-family: "Sono", sans-serif; */
 }
 
 .fact-form span {
   color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+a:link,
+a:visited {
+  color: #a8a29e;
+  text-decoration: none;
 }
