@@ -1,0 +1,43 @@
+/* @880px:less aggressive font size scaling 
+and grid adjustments*/
+
+@media screen and (max-width: 55em) {
+  html {
+    font-size: calc(1vw + 5px);
+  }
+  .fact {
+    display: grid;
+  }
+  .tag {
+    /* align-self: end; */
+    justify-self: start;
+  }
+}
+
+/* @672px:less aggressive font size */
+@media screen and (max-width: 42em) {
+  html {
+    font-size: calc(1vw + 10px);
+  }
+
+  .main {
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr;
+    height: auto;
+    /* align-items: stretch; */
+  }
+  .header {
+    display: grid;
+    justify-content: stretch;
+  }
+  .logo-text-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+  }
+  .main-section {
+    /* turn off scrolling */
+    overflow: visible;
+  }
+}
